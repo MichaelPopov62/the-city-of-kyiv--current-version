@@ -20,8 +20,8 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/the-city-of-kyiv--current-version/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/index-Chde-p1c.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-CXHoP0ZZ.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/index-BXfEQE7Y.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-Dxvidutf.css">
   </head>
   <body>
     
@@ -130,9 +130,14 @@
                 width="50" height="60"
                 alt="герб страни"/>
 
-              <form>
-                <button class="bnt-title" type="submit">задай запитaння</button>
+              <form class="question-form" action="#" method="post">
+                  <label for="question-text">Ваше питання </label>
+                    <textarea id="question-text" name="question" required></textarea>
+
+                  <button class="btn-title" type="submit">надіслати</button>
+                   <p class="form-status"></p>
               </form>
+              <button  id="open-question" class="btn-title" type="button">Задай питання</button>
             </div>
         </div>
       </section>
