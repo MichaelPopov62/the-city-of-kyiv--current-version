@@ -8,7 +8,8 @@
     "build": "vite build --base=/the-city-of-kyiv--current-version/",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "server": "node server/server.js"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
@@ -21,6 +22,9 @@
   "license": "ISC",
   "dependencies": {
     "basiclightbox": "^5.0.4",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

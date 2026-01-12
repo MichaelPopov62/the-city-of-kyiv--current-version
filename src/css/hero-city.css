@@ -2,6 +2,7 @@
   width: 100%;
 }
 .hero-city {
+  position: relative;
   background-color: #b9ea33;
   background-image: linear-gradient(
       to bottom,
@@ -14,7 +15,7 @@
   background-position:center top;
   background-size: cover;
   min-height: 500px;
- 
+
 
 }
 
@@ -63,7 +64,7 @@
   align-items: center;
   justify-content: center;
 }
-.question-form {
+/* .question-form {
   display: none;
 }
 
@@ -72,7 +73,7 @@
 }
 .question-form label {
   display: block;
-  margin-bottom: 6px; /* відступ від тексту до textarea */
+  margin-bottom: 6px;
   font-weight: bold;
   color: #14115b;
 }
@@ -89,7 +90,7 @@
   margin-top: 8px;
   font-size: 14px;
 }
-
+*/
 
 .btn-title {
 
@@ -101,26 +102,24 @@
 
 .button-gat {
   position: fixed;
-  bottom: 50px;
   right: 10px;
   bottom: 10px;
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  font-size: 5px;
-  text-align: center;
 
-  border: 3px solid #14115b;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #14115b;
   border-radius: 50%;
   background-color: #a5ca2a;
-  font-weight: 600;
+   z-index: 1000;
+
+
 }
 .arrow {
  display: inline-block;
-
   width: 24px;
   height: 24px;
 }
+
 
 
 /*=====tablet========*/
