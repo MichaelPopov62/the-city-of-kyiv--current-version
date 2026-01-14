@@ -18,12 +18,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    />
+    <link rel="stylesheet" href="animations.css">
     <script type="module" crossorigin src="/the-city-of-kyiv--current-version/index.js"></script>
     <link rel="modulepreload" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-CAXQE2hQ.js">
     <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-C3QZVnZz.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/index-C3LpmeIh.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-5-n7vYae.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-oGWWkNG-.css">
   </head>
   <body>
       
@@ -33,8 +33,8 @@
     <div class="container">
       <div class="wrapper-general">
         <nav class="heder-nav">
-          <a class = "logo" href="#"><img
-            class="logo"
+          <a class = "logo-link" href="#"><img
+            class="logo-img"
             src="/the-city-of-kyiv--current-version/img/kyiv-png.png"
             width="70"
             height="90"
@@ -147,13 +147,13 @@
       <div class="modal" id="question-modal">
   <div class="modal-content">
     <button class="modal-close" type="button">×</button>
-    <form id="question-form" class="question-form" action="#" method="post">
+    <form id="question-form" novalidate class="question-form" action="#" method="post">
       <p class="form-hint">Для зворотнього зв'язку залиште свій телефон або email</p>
 
       <label for="question-text">Ваше питання</label>
-      <textarea id="question-text" name="question" required></textarea>
+      <textarea id="question-text" name="question" ></textarea>
 
-      <label for="contact">Телефон або email (необов'язково)</label>
+      <label for="contact">Телефон або email</label>
       <input type="text" id="contact" name="contact" placeholder="Наприклад: email@example.com">
 
       <button class="btn-title" type="submit">надіслати</button>
