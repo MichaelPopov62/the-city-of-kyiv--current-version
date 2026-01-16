@@ -1,0 +1,54 @@
+  .privacy-policy-main{
+    background-color:#b9ea33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .privacy-policy-title {
+      margin: 0;
+      font-size: 36px;
+      color:#504CAF  ;
+    }
+
+    .privacy-policy-subtitle {
+      color: #504CAF ;
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+   .privacy-policy-paragraph{
+    font-size: 18px;
+    font-weight: 600;
+      margin: 12px 0;
+      color: #AF504C ;
+    }
+
+    .privacy-policy-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items:center;
+      margin: 10px 0 20px 20px;
+       list-style: none;
+    }
+    .privacy-policy-item{
+      width: 100%;           /* або конкретна ширина, наприклад 600px */
+      font-size: 18px;
+      font-weight: 600;
+      color: #504CAF;
+      background: color #b5f3b5;;
+      max-width: 600px;      /* обмежує максимальну ширину */
+      min-height: 60px;      /* фіксує висоту всіх елементів */
+      padding: 10px 15px;    /* внутрішні відступи для тексту */
+      border: 1px solid #ddd; /* опціонально для візуального виділення */
+      border-radius: 6px;    /* трохи округлення */
+      box-sizing: border-box; /* щоб padding не збільшував ширину */
+      word-wrap: break-word;  /* переносить довгі слова на новий рядок */
+      overflow-wrap: break-word;
+      background-color: #f9f9f9; /* фон блоку */
+      display: flex;
+      align-items: center;   /* вертикальне вирівнювання тексту */
+}
+
+

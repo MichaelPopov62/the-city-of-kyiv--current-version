@@ -8,46 +8,36 @@
   gap: 24px;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
 }
 
-.footer-logo {
-  display: none;
-  font-weight: 100;
-  letter-spacing: normal;
-  font-size: 20px;
-  line-height: 16px;
-  text-transform: capitalize;
-  border: #434455;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px blue, 16px 16px 20px rgb(234, 201, 16);
-  cursor: pointer;
-}
+
 /*блок адреса*/
 .communicat {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  gap: 12px;
   align-items: center;
 }
 .email {
   display: block;
-  padding-top: 20px;
-  margin-right: 24px;
+
 }
 .phone {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   text-align: center;
-  margin-right: 24px;
+  margin: 0;
+
 }
 .communicat-phone {
   display: block;
   font-style: normal;
   color: #220661;
   font-weight: 400;
-  margin-bottom: 18px;
+  margin: 0;
+
 }
 .footer-phone {
   font-style: normal;
@@ -61,7 +51,8 @@
   font-style: normal;
   color: #220661;
   font-weight: 400;
-  margin-bottom: 18px;
+
+
 }
 .footer-address {
   display: block;
@@ -72,79 +63,64 @@
   color: #220661;
   text-align: center;
 }
-/* соціальний блок гумовий, тому що flex-wrap - wrap*/
-.social-list {
-  display: none;
-  /* display: flex; */
-  gap: 24px;
-  padding: 20px 0;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-.social-item {
-  /* position: relative; */
-  background-color: #14115b;
-  align-items: center;
-  border-radius: 10px;
-  width: 36px;
-  height: 36px;
-}
-.social-link {
-  width: 100%;
-  height: 100%;
-  background-color: #14115b;
-  border-radius: 10px;
+
+/*додаткові посилання*/
+.footer-list-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
+  margin-left: 50px;
+
+}
+.footer-item-links {
+    color: #220661;
+  font-weight: 400;
+
+
 }
 
-.social-icons {
-transition: fill 0.3s ease;
-  fill: #fff;
+.footer-copyright-paragraph {
+      color: #220661;
+  font-weight: 400;
+ margin: 0 auto;
+ padding: 0 12px;
+  text-align: center;
 }
+
+.footer-notes-paragraph {
+    color: #220661;
+  font-weight: 400;
+ margin: 0 auto;
+ padding: 0 12px;
+  text-align: center;
+}
+
 
 
 
 /*==========tablet===========*/
 
 @media screen and ( min-width: 768px){
-
-  .footer-container {
-  display: flex;
+  .footer-container{
+    display: flex;
   flex-direction: row;
-  gap: 56px;
-  align-items: flex-start;
- justify-content: space-between;
- padding: 15px 40px;
+  gap: 16px;
 }
+.communicat{
 
-.communicat {
+}
+.phone{
+  margin-right: 0;
+}
+.wrapper-copyright-notes{
   display: flex;
-  flex-direction:row;
-  gap: 62px;
- align-items: center;
-}
-.social-list{
-  display: none;
-}
-.email {
-  display: block;
-  margin-right: 24px;
-}
-.phone {
-margin-right: 0;
-}
-.communicat-phone {
-
-  margin-bottom:0;
+  flex-direction: column;
+  gap: 48px;
 }
 
 
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 
 }

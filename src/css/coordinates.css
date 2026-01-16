@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .map-link {
@@ -37,6 +38,8 @@
 .basicLightbox__placeholder {
   width: 100vw;
   height: 100vh;
+  /* background-color: #dbeb2a; */
+
 }
 
 .modal-map {

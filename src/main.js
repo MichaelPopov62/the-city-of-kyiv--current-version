@@ -7,6 +7,7 @@ import'./js/monuments.js';
 import'./js/question-form.js';
 import'./js/coordinates.js';
 import'./js/footer.js';
+import'./js/privacy.js';
 
 
 

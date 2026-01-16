@@ -5,6 +5,8 @@
   margin-top: 32px;
   border: 1px solid;
   border-radius: 8px;
+  background-color:#504CAF;
+  margin-bottom: 24px;
 }
 .back-link::before {
   content: '';
