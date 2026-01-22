@@ -6,6 +6,7 @@
   border: 1px solid;
   border-radius: 8px;
   background-color:#504CAF;
+  color:#ffff;
   margin-bottom: 24px;
 }
 .back-link::before {

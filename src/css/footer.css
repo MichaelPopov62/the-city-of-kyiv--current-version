@@ -5,9 +5,12 @@
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   align-items: flex-start;
   justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 16px;
 
 }
 
@@ -16,15 +19,10 @@
 .communicat {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
 }
-.email {
-  display: block;
-
-}
 .phone {
-  display: flex;
   flex-direction: column;
   gap: 12px;
   text-align: center;
@@ -44,6 +42,14 @@
   font-weight: 400;
   color: #220661;
   text-align: center;
+  padding: 8px 0;
+}
+.email {
+  flex-direction: column;
+  align-items:center;
+  gap: 8px;
+  text-align: left;
+  padding-left: 0;
 }
 .communicat-email {
   display: block;
@@ -51,47 +57,48 @@
   font-style: normal;
   color: #220661;
   font-weight: 400;
-
-
+  padding-left:16px;
 }
 .footer-address {
   display: block;
   font-weight: 400;
-  padding-right: 20px;
-  padding-left: 20px;
   font-style: normal;
   color: #220661;
   text-align: center;
+  padding:8px 20px;
 }
 
 /*додаткові посилання*/
 .footer-list-links {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   align-items: center;
-  margin-left: 50px;
-
+  margin-left: 93px;
 }
 .footer-item-links {
-    color: #220661;
+  color: #220661;
   font-weight: 400;
-
-
 }
-
+.wrapper-copyright-notes{
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
 .footer-copyright-paragraph {
-      color: #220661;
+  color: #220661;
   font-weight: 400;
- margin: 0 auto;
- padding: 0 12px;
+  margin: 0 auto;
+  padding: 0 12px;
   text-align: center;
 }
 
 .footer-notes-paragraph {
-    color: #220661;
+  color: #220661;
   font-weight: 400;
- margin: 0 auto;
- padding: 0 12px;
+  margin: 0 auto;
+  padding: 0 12px;
   text-align: center;
 }
 
@@ -104,23 +111,34 @@
   .footer-container{
     display: flex;
   flex-direction: row;
-  gap: 16px;
-}
-.communicat{
+  gap: 48px;
+
 
 }
-.phone{
-  margin-right: 0;
+.address-span{
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.footer-list-links{
+  margin-left: 0;
+
 }
 .wrapper-copyright-notes{
   display: flex;
-  flex-direction: column;
-  gap: 48px;
+flex-direction: column;
+  gap: 78px;
 }
+.footer-notes-paragraph {
 
+  text-align: center;
+}
 
 }
 
 @media screen and (max-width: 1200px) {
+  .wrapper-copyright-notes{
+      gap: 64px;
+      }
+   
 
 }
