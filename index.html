@@ -19,11 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="animations.css">
     <script type="module" crossorigin src="/the-city-of-kyiv--current-version/index.js"></script>
     <link rel="modulepreload" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-CAXQE2hQ.js">
     <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/vendor-C3QZVnZz.css">
-    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-DWWTMbU3.css">
+    <link rel="stylesheet" crossorigin href="/the-city-of-kyiv--current-version/assets/styles-5z5WFKmX.css">
   </head>
 
 
@@ -391,7 +391,7 @@
             Адреса: вулиця Хрещатик, 36, Київ, 01044
           </p>
           <div class="tumb">
-            <h2 class="coordinates-map" id="Картаміста">Карта міста</h2>
+            <h2 class="coordinates-map" id="map-city">Карта міста</h2>
             <a class="map-link" href="https://map.meta.ua/ua/kiev/#zoom=13&lat=50.40012&lon=30.53193&base=B00"
               ><img
                 class="coordinates-link"
@@ -400,7 +400,7 @@
 
             /></a>
 
-            <h2 class="coordinates-map" id="Картаметро">Карта метро</h2>
+            <h2 class="coordinates-map" id="map-metro">Карта метро</h2>
             <a class="map-link" href="#" data-large="img/metro-next-4.jpeg"
               ><img
                 class="coordinates-link"
@@ -436,80 +436,57 @@
   </nav>
 </div>
 
-         <footer class="footer" >
+         <footer class="footer" id="footer" >
       <div class="footer-container">
-        <img
-          class="footer-logo"
-          src="img/kyiv-png.png"
-          width="70"
-          height="90"
-          alt="logo kyiv"  />
+         <address class="communicat">
+            <div class="phone">
+              <a class="communicat-phone" href="tel:+14251234563">+1(425) 123-45-63"</a>
+              <span class="footer-phone">безкоштовна горяча лінія</span>
+            </div>
+            <div class="email">
+              <a class="communicat-email" href="mailto:example@mail.pig"
+                >електронна пошта : example@mail.pig
+              </a>
+                <p class="footer-address">
+                  м. Київ,
+                  Бульвар Лесі Українки, <span class="address-span">буд. 26,
+                  4й поверх офіс 427</span>
+                </p>
+            </div>
+          </address>
 
-          <address class="communicat">
-        <div class="phone">
-            <a class="communicat-phone" href="tel:+14251234563">+1(425) 123-45-63"</a>
-            <span class="footer-phone">безкоштовна горяча лінія</span>
-        </div>
-        <div class="email">
-            <a class="communicat-email" href="mailto:example@mail.pig"
-              >електронна пошта : example@mail.pig</a>
-              <p class="footer-address">
-                м. Київ,
-                Бульвар Лесі Українки, буд. 26,
-                4й поверх офіс 427
-              </p>
-        </div>
-        </address>
-
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://www.instagram.com/"
-             target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram">
-            <svg class="social-icons" width="24" height="24">
-              <use href="/the-city-of-kyiv--current-version/img/symbol-defs-two.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://www.facebook.com/"
-             target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook">
-            <svg class="social-icons" width="24" height="24">
-              <use href="img/symbol-defs-two.svg#icon-facebook"></use>
-            </svg></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://twitter.com/"
-                target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Twitter">
-            <svg class="social-icons" width="24" height="24">
-              <use href="img/symbol-defs-two.svg#icon-twitter"></use>
-            </svg></a>
-          </li>
-
-        </ul>
          <!-- Додаткові посилання -->
-    <ul class="footer-links">
-      <li><a href="./privacy-policy.html">Політика конфіденційності</a></li>
-      <li><a href="./terms-of-service.html">Условия использования</a></li>
-      <li><a href="./faq.html">FAQ</a></li>
-      <li><a href="./sitemap.html">Карта сайта</a></li>
-    </ul>
-       <!-- Авторські права -->
-    <div class="footer-copyright">
-      © 2026 Company Name. Всі права захищені.
-    </div>
-      <!-- Дрібний текст / нотатки -->
-    <div class="footer-notes">
-      Всі торгові марки належать їх власникам. Дизайн сайту відповідає сучасним стандартам.
-    </div>
+
+        <ul class="footer-list-links">
+          <li class="footer-item-links">
+            <a href="./privacy-policy.html">Політика конфіденційності</a>
+          </li>
+          <li class="footer-item-links">
+            <a href="./terms-of-use.html">Условия использования</a>
+          </li>
+          <li class="footer-item-links">
+            <a href="./faq.html">FAQ</a>
+          </li>
+          <li class="footer-item-links">
+            <a href="./sitemap.html">Карта сайта</a>
+          </li>
+        </ul>
+
+       <!-- Дрібний текст / нотатки -->
+          <div class="wrapper-copyright-notes">
+        <div class="footer-notes">
+          <p class="footer-notes-paragraph"> Всі торгові марки належать їх власникам. Дизайн сайту відповідає сучасним стандартам.</p>
+        </div>
+
+         <!-- Авторські права -->
+
+        <div class="footer-copyright">
+          <p class="footer-copyright-paragraph">© 2026 Company Name. Всі права захищені.</p>
+        </div>
+
+        </div>
       </div>
     </footer>
-
+
   </body>
 </html>
