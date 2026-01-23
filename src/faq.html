@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Часті питання</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+<body>
+
+<main class="faq">
+  <div class="container">
+    <h1 class="faq-title">Часті питання (FAQ)</h1>
+    <p class="faq-description">
+      Тут зібрані типові питання користувачів та короткі відповіді на них.
+      Виберіть питання, щоб дізнатися деталі.
+    </p>
+
+    <!-- FAQ список -->
+    <div id="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          Чи зберігається моє питання, якщо я закрив форму?
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p class="answer-description"><div class="faq-item">
+        <button class="faq-question">
+          Чи зберігається моє питання, якщо я закрив форму?
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p class="answer-description">Ні, чернетка зберігається тільки під час відкритої вкладки. Після закриття вкладки вона зникає.</p>
+        </div>
+      </div></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Скільки часу чекати на відповідь від нас?
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p class="answer-description">Ми намагаємось відповісти протягом 24 годин на робочі дні.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Як безпечно залишити свій контакт?
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p class="answer-description">Ми не передаємо ваші дані третім особам і використовуємо їх лише для відповіді на ваше питання.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Чи можу я змінити своє питання після відправки?
+          <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+          <p class="answer-description">Після відправки питання редагування неможливе. Якщо потрібно уточнити, можна надіслати нове питання.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Кнопка повернення -->
+    <load src="./partials/back-link.html" />
+  </div>
+</main>
+
+<!-- Футер -->
+<load src="./partials/footer.html" highlight-act="active" />
+<script type="module" src="./js/faq.js"></script>
+
+</body>
+</html>

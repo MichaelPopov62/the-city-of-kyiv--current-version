@@ -10,6 +10,7 @@ import'./js/footer.js';
 import'./js/privacy.js';
 import'./js/sitemap.js';
 import'./js/terms-of-use.js';
+import'./js/faq.js';
 
 
 
