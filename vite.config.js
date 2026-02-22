@@ -7,13 +7,13 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   // Автоматично підбираємо всі HTML файли у src та підпапках
-  const htmlFilesArray = glob.sync('**/*.html'); // відносно root: 'src'
+  const htmlFilesArray = glob.sync('**/*.html', { ignore: ['dist/**'] }); // відносно root: 'src'
 
-  // Створюємо об’єкт для Rollup input {name: path}
+  // Створюємо об'єкт для Rollup input {name: path}
   const htmlFiles = {};
   htmlFilesArray.forEach(filePath => {
-    const name = path.parse(filePath).name; // ім’я без розширення
-    htmlFiles[name] = path.resolve(__dirname, 'src', filePath);
+    const name = path.parse(filePath).name; // ім'я без розширення
+    htmlFiles[name] = path.resolve(__dirname, filePath);
   });
 
   console.log('Rollup HTML input files:', htmlFiles); // для перевірки
