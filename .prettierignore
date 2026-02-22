@@ -1,0 +1,31 @@
+# Ігнорувати залежності
+node_modules
+
+# Ігнорувати папки збірки
+dist
+build
+.next
+
+# Файли блокування версій бібліотек
+package-lock.json
+yarn.lock
+
+# Графічні та бінарні файли
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.pdf
+
+# Ігнорувати конкретні розширення
+*.log
+*.svg
+package-lock.json
+.DS_Store
+.env
+
+# Файлы блокировки версий
+package-lock.json
+yarn.lock

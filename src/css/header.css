@@ -1,54 +1,55 @@
-
 /*========mobil==========*/
 /* хедер */
+html {
+  scroll-padding-top: 100px;
+  /* висота header */
+}
+
 .pade-heder {
   background-color: #8df822;
   backdrop-filter: blur(6px);
   position: fixed;
   z-index: 1000;
-   top: 0;
+  top: 0;
   left: 0;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-/* смуга по низу */
-.pade-heder::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
 
-  width: 100%;
-  height: 4px;              /* товщина смуги */
-  background-color: #14115b; /* колір */
-}
-.wrapper-general{
+.wrapper-general {
   display: flex;
-  align-items: center;
+
 
 }
+
 .heder-nav {
+  position: relative;
+  /* для active-line */
   display: flex;
   margin-right: auto;
   margin-left: 20px;
   justify-content: space-between;
 }
+
+
 .logo-img {
- 
-   object-fit: contain;
+
+  object-fit: contain;
   display: block;
- animation: stretch 0.8s ease-out forwards;
- transition: transform 0.3s ease, filter 0.3s ease; /* плавное увеличение при hover */
+  animation: stretch 0.8s ease-out forwards;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* плавное увеличение при hover */
   border: #434455;
   border-radius: 10px;
   box-shadow: 2px 2px 4px blue, 16px 16px 20px rgb(234, 201, 16);
   cursor: pointer;
 }
+
 .logo-link {
-  display:block;
+  display: block;
   position: relative;
-   width: 70px;
+  width: 70px;
   height: 90px;
   flex-shrink: 0;
 
@@ -57,15 +58,17 @@
 @keyframes stretch {
   from {
     opacity: 0;
-    transform:   scale(0.2);
+    transform: scale(0.2);
   }
+
   to {
     opacity: 1;
-    transform:  scale(1);
+    transform: scale(1);
   }
 }
+
 .logo-img:hover {
-    transform:  scale(1.2);
+  transform: scale(1.2);
   filter: brightness(1.2);
 }
 
@@ -76,38 +79,45 @@
 
 
 }
-.nav-stroke{
+
+.nav-stroke {
   fill: transparent;
   stroke: #121df5;
   margin-left: auto;
-   stroke-width: 3;
+  stroke-width: 3;
 }
-.header-social{
+
+.header-social {
   display: flex;
   justify-content: flex-end;
-  gap:12px;
+  gap: 12px;
 }
-.header-social-item{
-    width: 24px;
+
+.header-social-item {
+  width: 24px;
   height: 24px;
-  border-radius: 50%;          /* коло */
+  border-radius: 50%;
+  /* коло */
   background-color: #121df5;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .social-link {
   display: inline-flex;
-   line-height: 1;
+  line-height: 1;
 
   /* align-items: center;
   justify-content: center; */
   transition: background-color 0.3s ease;
 }
-.icon-social{
- fill: #fff;
+
+.icon-social {
+  fill: #fff;
   transition: fill 0.3s ease;
 }
+
 /*навігація*/
 .nav-list {
   display: none;
@@ -117,6 +127,7 @@
   padding-top: 25px;
   color: #180a72;
 }
+
 .nav-item {
   display: block;
   font-size: 20px;
@@ -125,6 +136,7 @@
 .link-span {
   color: #180a72;
 }
+
 .mobile-menu .nav-link-item {
   display: block;
   font-size: 26px;
@@ -133,6 +145,7 @@
   font-style: normal;
   text-shadow: 10px 6px 15px rgb(42, 26, 26);
 }
+
 .nav-link {
   font-size: 16px;
   font-weight: bold;
@@ -140,24 +153,16 @@
   font-style: normal;
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 .nav-link:focus,
 .nav-link:hover {
   color: rgb(235, 8, 8);
 }
+
 .nav-link.current {
   position: relative;
 }
 
-.nav-link.current::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: blue;
-  border-radius: 2px;
-}
 .burger-btn {
   background: none;
   border: none;
@@ -179,29 +184,43 @@
   margin: 0;
   list-style: none;
 
-    opacity: 0;
+  opacity: 0;
   pointer-events: none;
   transform: translateY(12px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .mobile-menu.is-open .nav-list {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
- .mobile-menu .nav-item {
+
+.mobile-menu .nav-item {
   opacity: 0;
-  transform: translateY(12px);}
+  transform: translateY(12px);
+}
 
 /*анимація*/
-  .mobile-menu.is-open .nav-item {
+.mobile-menu.is-open .nav-item {
   animation: fadeUp 0.4s ease forwards;
 }
 
-  .mobile-menu.is-open .nav-item:nth-child(1) { animation-delay: 0s; }
-.mobile-menu.is-open .nav-item:nth-child(2) { animation-delay: 0.2s; }
-.mobile-menu.is-open .nav-item:nth-child(3) { animation-delay: 0.4s; }
-.mobile-menu.is-open .nav-item:nth-child(4) { animation-delay: 0.6s; }
+.mobile-menu.is-open .nav-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.mobile-menu.is-open .nav-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.mobile-menu.is-open .nav-item:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.mobile-menu.is-open .nav-item:nth-child(4) {
+  animation-delay: 0.6s;
+}
 
 
 /*закрита модалка */
@@ -224,19 +243,22 @@
     opacity 250ms ease,
     transform 300ms ease;
 }
+
 /* відкрита модалка*/
 .mobile-menu.is-open {
   display: flex;
-    opacity: 1;
+  opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0); }
+  transform: translateY(0);
+}
 
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -247,11 +269,12 @@
   position: absolute;
   top: 20px;
   right: 20px;
-   font-size: 32px;
+  font-size: 32px;
   background: none;
   border: none;
   color: #14115b;
-  cursor: pointer;}
+  cursor: pointer;
+}
 
 /*навігація всередині модалки*/
 .mobile-nav .nav-list {
@@ -281,8 +304,9 @@
 
 
 .contacts {
-margin-right: auto;
+  margin-right: auto;
 }
+
 .contacts-list {
   display: none;
   flex-wrap: nowrap;
@@ -295,6 +319,7 @@ margin-right: auto;
   padding-left: 50px;
   transition: color 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 .contacts-link {
   font-weight: 100;
   font-size: 16px;
@@ -302,6 +327,7 @@ margin-right: auto;
   letter-spacing: 0.02em;
   color: #030859;
 }
+
 .link-span:focus,
 .link-span:hover,
 .nav-link-item:focus,
@@ -316,129 +342,155 @@ margin-right: auto;
 
 /*==========tablet===========*/
 
-@media screen and ( min-width: 768px){
-  .heder-nav{
+@media screen and (min-width: 768px) {
+  .heder-nav {
     align-items: center;
   }
-    .burger-btn {
+
+  .burger-btn {
     display: none;
   }
-  .mobile-menu{
+
+  .mobile-menu {
     .mobile-menu {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-100%);
+    }
   }
-  }
+
   .pade-heder {
-  width: 100%;
-  left:0;
-  top:0;
-}
-.wrapper-general{
-  display: flex;
-  align-items: flex-start;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
 
-}
-.nav-list {
-  display: flex;
-  gap: 48px;
-  padding-right: 0;
+  .wrapper-general {
+    display: flex;
+    align-items: flex-start;
 
-}
-.nav-item {
-  display: block;
-  font-size: 20px;
-}
+  }
 
-.link-span {
-  color: #3d44c3;
-}
-.nav-link-item {
-  display: block;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: brown;
-  font-style: normal;
-  text-shadow: 10px 6px 15px rgb(42, 26, 26);
-}
-.nav-link {
-  font-size: 16px;
-  font-weight: bold;
-  color: #3d44c3;
-  font-style: normal;
-  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.nav-link:focus,
-.nav-link:hover {
-  color: rgb(235, 8, 8);
-}
-.nav-link.current {
-  position: relative;
-}
+  .nav-list {
+    display: flex;
+    gap: 48px;
+    padding-right: 0;
 
-.nav-link.current::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: blue;
-  border-radius: 2px;
-}
-.wrapper-contacts{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-.contacts {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
+  }
 
-}
-.contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding-bottom: 25px;
- }
-.contacts-link {
-  font-weight: 100;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  color: #14115b;
-}
-.link-span:focus,
-.link-span:hover,
-.nav-link-item:focus,
-.nav-link-item:hover,
-.contacts-link:hover,
-.contacts-link:focus,
-.nav-link.current::before {
-  color: rgb(255, 0, 0);
-}
-
-.nav-stroke{display: none;}
-}
-/*========desktop===========*/
-@media screen and ( min-width: 1200px){
   .heder-nav {
-  display: flex;
-  gap: 120px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-between;
+    position: relative;
+    /* щоб смуга була всередині nav */
+  }
+
+  .active-line {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: blue;
+    transition: left 0.3s ease, width 0.3s ease;
+    pointer-events: none;
+  }
+
+  .nav-item {
+    display: block;
+    font-size: 20px;
+  }
+
+  .link-span {
+    color: #3d44c3;
+  }
+
+  .nav-link-item {
+    display: block;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+    font-style: normal;
+    text-shadow: 10px 6px 15px rgb(42, 26, 26);
+  }
+
+  .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d44c3;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: rgb(235, 8, 8);
+  }
+
+  .nav-link.current {
+    position: relative;
+  }
+
+  .wrapper-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-bottom: 25px;
+  }
+
+  .contacts-link {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #14115b;
+  }
+
+  .link-span:focus,
+  .link-span:hover,
+  .nav-link-item:focus,
+  .nav-link-item:hover,
+  .contacts-link:hover,
+  .contacts-link:focus,
+  .nav-link.current::before {
+    color: rgb(255, 0, 0);
+  }
+
+  .nav-stroke {
+    display: none;
+  }
 }
-.nav-list {
-  gap: 84px;
-  padding: 0;
-}
+
+/*========desktop===========*/
+@media screen and (min-width: 1200px) {
+  .heder-nav {
+    display: flex;
+    gap: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    gap: 84px;
+    padding: 0;
+  }
+
+  .active-line {
+    bottom: 25px;
+  }
 
 }
