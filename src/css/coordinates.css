@@ -4,8 +4,10 @@
   background-color: #b9ea33;
 }
 
-.coordinates-power,.coordinates-street,
-.coordinates-map  {
+.coordinates-power,
+.coordinates-street,
+.coordinates-map {
+
   text-align: center;
   color: #180a72;
 }
@@ -14,7 +16,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap:16px;
+  gap: 16px;
   justify-content: center;
   align-items: center;
   padding-top: 15px;
@@ -26,15 +28,20 @@
   box-shadow: 6px 6px 16px #180a72, 18px 18px 16px #8df822;
   margin-right: 10px;
   margin-left: 10px;
+
 }
+
 .coordinates-link {
   display: block;
   max-width: 100%;
+
 }
-.coordinates-map{
-  font-family:sans-serif;
+
+.coordinates-map {
+  font-family: sans-serif;
   font-size: 16px;
 }
+
 .basicLightbox__placeholder {
   width: 100vw;
   height: 100vh;
@@ -49,20 +56,23 @@
   display: block;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .tumb {
-     flex-direction: row;
-      gap: 24px;
-}
- .map-link {
-   display: block;
-  width: calc((100% - 24px) / 2);
+    flex-direction: row;
+    gap: 24px;
   }
+
+  .map-link {
+
+    display: block;
+    width: calc((100% - 24px) / 2);
+  }
+
   .coordinates-link {
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
 
 }

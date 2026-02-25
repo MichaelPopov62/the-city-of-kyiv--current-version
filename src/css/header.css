@@ -3,6 +3,8 @@
 html {
   scroll-padding-top: 100px;
   /* висота header */
+  scroll-behavior: smooth;
+  /* плавне прокручування */
 }
 
 .pade-heder {
@@ -107,9 +109,6 @@ html {
 .social-link {
   display: inline-flex;
   line-height: 1;
-
-  /* align-items: center;
-  justify-content: center; */
   transition: background-color 0.3s ease;
 }
 
@@ -147,6 +146,7 @@ html {
 }
 
 .nav-link {
+  position: relative;
   font-size: 16px;
   font-weight: bold;
   color: #180a72;
@@ -157,10 +157,6 @@ html {
 .nav-link:focus,
 .nav-link:hover {
   color: rgb(235, 8, 8);
-}
-
-.nav-link.current {
-  position: relative;
 }
 
 .burger-btn {
@@ -343,6 +339,14 @@ html {
 /*==========tablet===========*/
 
 @media screen and (min-width: 768px) {
+
+  html {
+    scroll-padding-top: 300px;
+    /* висота хедера на планшеті */
+  }
+
+
+
   .heder-nav {
     align-items: center;
   }
@@ -351,13 +355,12 @@ html {
     display: none;
   }
 
+
   .mobile-menu {
-    .mobile-menu {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transform: translateY(-100%);
-    }
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-100%);
   }
 
   .pade-heder {
@@ -386,7 +389,6 @@ html {
 
   .active-line {
     position: absolute;
-    bottom: 0;
     height: 4px;
     background-color: blue;
     transition: left 0.3s ease, width 0.3s ease;
@@ -427,6 +429,7 @@ html {
 
   .nav-link.current {
     position: relative;
+
   }
 
   .wrapper-contacts {
@@ -464,8 +467,7 @@ html {
   .nav-link-item:focus,
   .nav-link-item:hover,
   .contacts-link:hover,
-  .contacts-link:focus,
-  .nav-link.current::before {
+  .contacts-link:focus {
     color: rgb(255, 0, 0);
   }
 
@@ -476,21 +478,25 @@ html {
 
 /*========desktop===========*/
 @media screen and (min-width: 1200px) {
-  .heder-nav {
-    display: flex;
-    gap: 120px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: space-between;
+  html {
+    scroll-padding-top: 150px;
+    /* висота хедера на планшеті */
   }
+}
 
-  .nav-list {
-    gap: 84px;
-    padding: 0;
-  }
+.heder-nav {
+  display: flex;
+  gap: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+}
 
-  .active-line {
-    bottom: 25px;
-  }
+.nav-list {
+  gap: 84px;
+  padding: 0;
+}
 
+.active-line {
+  bottom: 5px;
 }
