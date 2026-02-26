@@ -340,11 +340,14 @@ html {
 
 @media screen and (min-width: 768px) {
 
-  html {
-    scroll-padding-top: 300px;
-    /* висота хедера на планшеті */
+  #map-city,
+  #map-metro {
+    scroll-margin-top: 250px;
   }
 
+  #organy-vlady {
+    scroll-margin-top: 50px;
+  }
 
 
   .heder-nav {
@@ -474,29 +477,30 @@ html {
   .nav-stroke {
     display: none;
   }
+
+  .active-line {
+    bottom: 2px;
+  }
 }
 
 /*========desktop===========*/
 @media screen and (min-width: 1200px) {
-  html {
-    scroll-padding-top: 150px;
-    /* висота хедера на планшеті */
+
+
+  .heder-nav {
+    display: flex;
+    gap: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
   }
-}
 
-.heder-nav {
-  display: flex;
-  gap: 120px;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: space-between;
-}
+  .nav-list {
+    gap: 84px;
+    padding: 0;
+  }
 
-.nav-list {
-  gap: 84px;
-  padding: 0;
-}
-
-.active-line {
-  bottom: 5px;
+  .active-line {
+    bottom: 25px;
+  }
 }
