@@ -76,7 +76,9 @@
   align-items: center;
   margin-left: 93px;
 }
-.footer-item-links {
+.footer-item-links,
+.footer-copyright-paragraph,
+.footer-notes-paragraph {
   color: #220661;
   font-weight: 400;
 }
@@ -87,16 +89,12 @@
   text-align: center;
 }
 .footer-copyright-paragraph {
-  color: #220661;
-  font-weight: 400;
   margin: 0 auto;
   padding: 0 12px;
   text-align: center;
 }
 
 .footer-notes-paragraph {
-  color: #220661;
-  font-weight: 400;
   margin: 0 auto;
   padding: 0 12px;
   text-align: center;

@@ -59,14 +59,14 @@
   margin-bottom: 40px;
 }
 
-.subtitle {
+.terms .subtitle {
   margin-bottom: 12px;
   font-size: 22px;
   font-weight: 600;
-  color: #180a72
+  color: #180a72;
 }
 
-.subtitle-paragraph {
+.terms .subtitle-paragraph {
   font-size: 16px;
   line-height: 1.6;
   color: #333;

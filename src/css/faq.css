@@ -70,10 +70,10 @@
 
 }
 
-.arrow {
+.faq .arrow {
   transition: transform 0.3s;
 }
 
-.rotate {
+.faq .rotate {
   transform: rotate(90deg);
 }

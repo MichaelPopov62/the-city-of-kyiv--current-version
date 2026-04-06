@@ -9,18 +9,9 @@
     transform: translateX(0);
   }
 }
-/*анімаціі на лого */
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%)  scale(0.2);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%)  scale(1);
-  }
-}
-/*анимація на ьобільное меню*/
+/* keyframes stretch для логотипа — у header.css */
+
+/* анімація пунктів мобільного меню */
 @keyframes fadeUp {
   from {
     opacity: 0;

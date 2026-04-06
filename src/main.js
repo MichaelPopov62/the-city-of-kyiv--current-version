@@ -2,7 +2,6 @@
 import './js/mobile-menu.js';
 import './js/header.js';
 import './js/hero-city.js';
-import './js/hero-form.js';
 import './js/monuments.js';
 import './js/question-form.js';
 import './js/coordinates.js';

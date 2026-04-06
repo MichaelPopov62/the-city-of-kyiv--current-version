@@ -64,20 +64,6 @@
 
 
 
-/* Клас для показу */
-.description.active {
-  display: block;
-}
-
-.overlay>img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* щоб картинка заповнювала весь блок */
-  display: block;
-  /* прибирає відступи навколо img */
-}
-
 .description {
   display: none;
   background: rgba(0, 0, 0, 0.7);
@@ -97,7 +83,8 @@
 
 /* окончание вспливающего окна */
 
-.monuments-picture {
+.monuments-picture,
+.overlay > img {
   display: block;
   width: 100%;
   height: 100%;
